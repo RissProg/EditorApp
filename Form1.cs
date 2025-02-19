@@ -15,6 +15,8 @@ namespace EditorApp
             AyarlariYukle();//kayýtlý ayar var ise yükler
 
             YeniBelge();//uygulama ilkçalýþtýðýnda yeni belge oluþtursun
+
+
         }
 
         void AyarlariYukle()
@@ -224,6 +226,11 @@ namespace EditorApp
         {
             FrmHakkinda form = new();
             form.ShowDialog();
+        }
+
+        private void tsbCikis_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
